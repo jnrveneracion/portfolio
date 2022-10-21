@@ -1,3 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janrie Veneracion - Portfolio</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+</head>
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
 
-<title>Home</title>
-<h1>hello</h1>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104810788829821");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="logo" >
+      <video id="logo" src="video/logo.m4v" autoplay></video>
+    </div>
+    
+    <div class="mainArea" id="profile" style="display: none;">
+      <div class="top">
+          <span class="topbtn" style="background-color: rgb(255, 88, 88); box-shadow: 0 0 0 1px rgb(237, 0, 0);"></span>
+          <span class="topbtn" style="background-color: rgb(255, 190, 61); box-shadow: 0 0 0 1px rgb(189, 130, 0);"></span>
+          <span class="topbtn" style="background-color: rgb(23, 201, 0); box-shadow: 0 0 0 1px rgba(0, 48, 0, 0.36);"></span>
+          <span class="title">Portfolio</span>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h2>Column1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainArea" id="contact" style="display: none;">
+      <div class="top">
+          <span class="topbtn" style="background-color: rgb(255, 88, 88); box-shadow: 0 0 0 1px rgb(237, 0, 0);"></span>
+          <span class="topbtn" style="background-color: rgb(255, 190, 61); box-shadow: 0 0 0 1px rgb(189, 130, 0);"></span>
+          <span class="topbtn" style="background-color: rgb(23, 201, 0); box-shadow: 0 0 0 1px rgba(0, 48, 0, 0.36);"></span>
+          <span class="title">Portfolio</span>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h2>Cre</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a onclick="displayProfile()" id="btnOpen" title="profile"><img src="img/user.svg" alt="Janrie Veneracion" class="icon"></a>
+      <a onclick="displayContact()" id="btnOpen" title="contact me"><img src="img/message.svg" alt="Contact" class="icon"></a>
+    </div>  
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
