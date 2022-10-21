@@ -94,8 +94,14 @@
     </div>
 
     <div class="nav">
-      <a onclick="displayProfile()" id="btnOpen" title="profile"><img src="img/user.svg" alt="Janrie Veneracion" class="icon"></a>
-      <a onclick="displayContact()" id="btnOpen" title="contact me"><img src="img/message.svg" alt="Contact" class="icon"></a>
+      <button onclick="displayProfile()" id="btnProfile" title="profile" class="navbtn">
+        <img src="img/user.svg" alt="Janrie Veneracion" class="icon">
+        <span class="navindicator" id="profileIndicator" style="display: none;"></span>
+      </button>
+      <button onclick="displayContact()" id="btnContact" title="contact me" class="navbtn">
+        <img src="img/message.svg" alt="Contact" class="icon">
+        <span class="navindicator" id="messageIndicator" style="display: none;"></span>
+      </button>
     </div>  
     
 
