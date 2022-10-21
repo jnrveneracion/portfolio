@@ -10,7 +10,7 @@ setTimeout(function() {
     logo.style.display = "none";
     profile.style = "animation: open 1s ease; animation-fill-mode: forwards;";
     profIndicator.style = "display: block;"
-}, 8200);
+}, 5000);
 
 
 function displayProfile(){

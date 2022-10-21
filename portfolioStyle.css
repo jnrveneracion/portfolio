@@ -10,7 +10,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: video 5s;
+    animation: video 5s ease-in-out;
 }
 
 @keyframes video {
@@ -18,15 +18,19 @@
         opacity: 0;
     }
 
-    100%{
+    50%{
         opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }
 
 .mainArea{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px 1px;
     background-color: rgb(247, 247, 247);
-    padding: 50px;
+    padding: 30px;
     width: 900px;
     height: fit-content;
     position: absolute;
@@ -102,6 +106,17 @@
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.08);
+    animation: navAnimation 5.5s ease-in;
+}
+
+@keyframes navAnimation {
+    0%{
+        transform: translateY(550px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .navindicator {
@@ -137,8 +152,9 @@
 .column {
     float: left;
     width: 30%;
-    padding: 15px;
+    padding: 10px;
 }
+
   
 .row:after {
   content: "";
@@ -150,7 +166,7 @@
 @media screen and (max-width:1000px) {
   .column {
     /* width: 90%; */
-    width: auto;
+    width: -webkit-fill-available;
   }
   .mainArea {
     width: fit-content;
@@ -161,6 +177,17 @@
     margin-bottom: auto;
     padding: 2%;
   }
+  #head {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .fieldcolumn {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    }
+
 }
 
 
@@ -182,4 +209,36 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.field {
+    border: solid rgba(223, 223, 223, 0.48) 3px;
+    border-radius: 7px;
+}
+
+p {
+    margin: auto;
+}
+
+ul, h4 {
+    padding: 0px;
+    margin: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.lastcolumn {
+    padding: 15px;
+}
+
+.b4lastcolumn{
+    padding: 15px;
+}
+
+.educationSection {
+    float: left;
+    width: 47%;
+    padding: 5px;
 }
