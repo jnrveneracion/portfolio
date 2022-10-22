@@ -223,6 +223,10 @@ li {
         right: 0;
         margin: auto;
     }
+    #profile{
+        position: absolute;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width:1000px) {
