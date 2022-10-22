@@ -13,27 +13,14 @@
     animation: video 5s ease-in-out;
 }
 
-@keyframes video {
-    0%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: 1;
-    }
-
-    100%{
-        opacity: 0;
-    }
-}
-
 .mainArea{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px 1px;
     background-color: rgb(247, 247, 247);
     padding: 30px;
     width: 900px;
     height: fit-content;
-    position: absolute;
+    /* position: absolute; */
+    position: initial;
     bottom: 0;
     top: 0;
     left: 0;
@@ -47,29 +34,7 @@
     border: 1px solid  rgb(171, 171, 171);
 }
 
-@keyframes open {
-    0%{
-        transform: translateY(2000px);
-    }
 
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-@keyframes close {
-    0%{
-        transform: translateY(0px);
-        opacity: .5;
-    }
-
-    100%{
-        transform: translateY(2000px);
-        
-    }
-}
-
-  
 .top {
       position: absolute;
       left: 0;
@@ -109,15 +74,6 @@
     animation: navAnimation 5.5s ease-in;
 }
 
-@keyframes navAnimation {
-    0%{
-        transform: translateY(550px);
-    }
-
-    100%{
-        transform: translateY(0px);
-    }
-}
 
 .navindicator {
     height: 5px;
@@ -148,7 +104,6 @@
     width: -webkit-fill-available;
 }
 
-
 .column {
     float: left;
     width: 30%;
@@ -160,48 +115,6 @@
   content: "";
   display: table;
   clear: both;
-}
-  
-
-@media screen and (max-width:1000px) {
-  .column {
-    /* width: 90%; */
-    width: -webkit-fill-available;
-  }
-  .mainArea {
-    width: fit-content;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: fit-content;
-    margin-top: 10%;
-    margin-bottom: auto;
-    padding: 2%;
-  }
-  #head {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .fieldcolumn {
-    float: left;
-    width: 45%;
-    padding: 5px;
-    }
-
-    .educationSection {
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width:500px) {
-    .fieldcolumn{
-        width: 100%;
-    }
-
-    .educationSection {
-        width: 100%;
-    }
 }
 
 a, .icon {
@@ -242,9 +155,9 @@ li {
     list-style: none;
 }
 
-.lastcolumn {
+/* .lastcolumn {
     padding: 15px;
-}
+} */
 
 .b4lastcolumn{
     padding: 15px;
@@ -252,4 +165,102 @@ li {
 
 .educationSection {
     padding: 5px;
+}
+
+
+@keyframes navAnimation {
+    0%{
+        transform: translateY(550px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes open {
+    0%{
+        transform: translateY(2000px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes close {
+    0%{
+        transform: translateY(0px);
+        opacity: .5;
+    }
+
+    100%{
+        transform: translateY(2000px);
+        
+    }
+}
+
+@keyframes video {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mainArea{
+        margin-top: 5%; 
+        margin-bottom: 5%;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+  .column {
+    /* width: 90%; */
+    width: -webkit-fill-available;
+  }
+  .mainArea {
+    width: fit-content;
+    margin-bottom: 15%;
+    height: -webkit-fit-content;
+    padding: 2%;
+  }
+  #head {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .fieldcolumn {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    }
+
+    .educationSection {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .fieldcolumn{
+        width: 100%;
+    }
+
+    .educationSection {
+        width: 100%;
+    }
+
+    .mainArea {
+        margin-bottom: 15%;
+    }
 }
