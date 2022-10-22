@@ -20,7 +20,7 @@
     width: 900px;
     height: fit-content;
     /* position: absolute; */
-    position: initial;
+    position: -webkit-sticky;
     bottom: 0;
     top: 0;
     left: 0;
@@ -110,7 +110,6 @@
     padding: 10px;
 }
 
-  
 .row:after {
   content: "";
   display: table;
@@ -181,7 +180,7 @@ li {
 
 @keyframes open {
     0%{
-        transform: translateY(2000px);
+        transform: translateY(1500px);
     }
 
     100%{
@@ -196,7 +195,7 @@ li {
     }
 
     100%{
-        transform: translateY(2000px);
+        transform: translateY(1500px);
         
     }
 }
@@ -216,12 +215,15 @@ li {
 }
 
 @media screen and (min-width: 1000px) {
-    .mainArea{
-        margin-top: 5%; 
-        margin-bottom: 5%;
+    #contact{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
-
 
 @media screen and (max-width:1000px) {
   .column {
