@@ -129,7 +129,7 @@ p {
     margin: auto;
 }
 
-ul, h4 {
+ul{
     padding: 0px;
     margin: 5px;
 }
