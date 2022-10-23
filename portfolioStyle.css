@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: video 5s ease-in-out;
+    animation: video 2s ease-in-out;
 }
 
 .mainArea{
@@ -196,10 +196,6 @@ li {
 
 @keyframes video {
     0%{
-        opacity: 0;
-    }
-
-    50%{
         opacity: 1;
     }
 
