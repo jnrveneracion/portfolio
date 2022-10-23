@@ -145,6 +145,8 @@ li {
 
 .b4lastcolumn{
     padding: 15px;
+    float: left;
+    width: 62%;
 }
 
 .educationSection {
@@ -234,7 +236,11 @@ li {
 
   .achive {
     width: 100%;
-}
+  }
+
+  .b4lastcolumn {
+    width: 97%;
+  }
 
 }
 
@@ -257,6 +263,9 @@ li {
         width: 100%;
     }
 
+    .b4lastcolumn {
+        width: 90%;
+    }
     @keyframes open {
         0%{
             transform: translate3d(0,1000px,0);
