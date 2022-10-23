@@ -1,7 +1,3 @@
-:root {
-
-}
-
 * {
     background-color: rgb(246, 246, 246);
     font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +11,11 @@
     top: 0;
     left: 0;
     animation: video 2s ease-in-out;
+}
+
+.me {
+    text-align: center;
+    margin: 10px;
 }
 
 .mainArea{
@@ -69,7 +70,7 @@
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.08);
-    animation: navAnimation 5.5s ease-in;
+    animation: navAnimation 2s ease-in;
 }
 
 
@@ -117,6 +118,12 @@ a, .icon {
     background-color: transparent;
 }
 
+a {
+    color: color(srgb 0.49 0.0971 0.0856);
+    text-decoration: none;
+    font-weight: 600;
+}
+
 .icon {
     width: 50px;
     height: 30px;
@@ -136,6 +143,15 @@ button {
 .field {
     border: solid rgba(223, 223, 223, 0.48) 3px;
     border-radius: 7px;
+}
+
+.headfield {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.headLegend {
+    font-size: 12px;
 }
 
 p {
@@ -160,10 +176,19 @@ li {
     padding: 5px;
 }
 
+.achive {
+    float: left;
+    width: 33%;
+}
+
+.centerContainer {
+    display: flex;
+    justify-content: center;
+}
 
 @keyframes navAnimation {
     0%{
-        transform: translateY(550px);
+        transform: translateY(250px);
     }
 
     100%{
@@ -174,7 +199,7 @@ li {
 
 @keyframes open {
     0%{
-        transform: translateY(1500px);
+        transform: translateY(1000px);
     }
 
     100%{
@@ -189,8 +214,7 @@ li {
     }
 
     100%{
-        transform: translateY(1500px);
-        
+        transform: translateY(1000px);
     }
 }
 
@@ -205,7 +229,6 @@ li {
 }
 
 
-
 @media screen and (min-width: 1000px) {
     #contact{
         position: absolute;
@@ -217,7 +240,7 @@ li {
     }
     
     #profile{
-        position: absolute;
+        position: sticky;
         margin: auto;
     }
 
@@ -259,6 +282,10 @@ li {
     width: 100%;
   }
 
+  .achive {
+    width: 100%;
+}
+
 }
 
 @media screen and (max-width:500px) {
@@ -274,5 +301,9 @@ li {
         margin-bottom: 100px;
         position: -webkit-sticky;
         position: sticky;
+    }
+
+    .achive {
+        width: 100%;
     }
 }
