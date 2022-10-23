@@ -326,4 +326,26 @@ li {
     .achive {
         width: 100%;
     }
+
+    @keyframes open {
+        0%{
+            transform: translate3d(0,500px,0);
+            background-color: blueviolet;
+        }
+    
+        100%{
+            transform: translate3d(0,0,0);
+        }
+    }
+    
+    @keyframes close {
+        0%{
+            transform: translate3d(0,0,0);
+            opacity: .5;
+        }
+    
+        100%{
+            transform: translate3d(0,500px,0);
+        }
+    }
 }
