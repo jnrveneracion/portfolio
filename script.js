@@ -6,10 +6,6 @@ iconContact = document.getElementById("btnContact")
 profIndicator = document.getElementById("profileIndicator")
 messIndicator = document.getElementById("messageIndicator")
 
-setTimeout(function() {
-    logo.style.display = "none";
-}, 1500);
-
 function scrollUp(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
