@@ -18,7 +18,7 @@ function scrollUp(){
 
 function displayProfile(){
     profile.style = "display: sticky; animation: open 1s ease; animation-fill-mode: forwards;";
-    contact.style = "animation: close 3s ease; animation-fill-mode: forwards;";
+    contact.style = "animation: close 4s ease; animation-fill-mode: forwards;";
     scrollUp();
 
     setTimeout(function() {
@@ -33,8 +33,8 @@ function displayProfile(){
 }
 
 function displayContact(){
+    contact.style = "display: sticky; animation: open 3.5s ease; animation-fill-mode: forwards;";
     profile.style = "animation: close 1s ease; animation-fill-mode: forwards;";
-    contact.style = "display: sticky; animation: open 3s ease; animation-fill-mode: forwards;";
     scrollUp();
 
     setTimeout(function() {
