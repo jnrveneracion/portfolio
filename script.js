@@ -8,8 +8,6 @@ messIndicator = document.getElementById("messageIndicator")
 
 setTimeout(function() {
     logo.style.display = "none";
-    displayProfile();
-    profIndicator.style = "display: block;";
 }, 1500);
 
 function scrollUp(){
