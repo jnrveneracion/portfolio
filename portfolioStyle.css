@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     animation: video 2s ease-in-out;
+  
 }
 
 .me {
@@ -191,7 +192,7 @@ li {
         margin: auto;
     }
 
-    @media screen and (max-height: 700px) {
+    @media screen and (max-height: 800px) {
         #profile{
             position: -webkit-sticky;
             position: sticky;
