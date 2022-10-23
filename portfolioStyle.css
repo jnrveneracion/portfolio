@@ -24,12 +24,10 @@
     padding: 30px;
     width: 900px;
     height: fit-content;
-    /* position: -webkit-sticky; */
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
-    /* margin: auto; */
     border-radius: 10px;
     border: 1px solid  rgb(171, 171, 171);
 }
@@ -57,41 +55,6 @@
     margin: 2px;
 }
 
-
-.nav {
-    position: fixed;
-    bottom: 10px;
-    width: fit-content;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.08);
-    animation: navAnimation 2s ease-in;
-}
-
-
-.navindicator {
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    margin: 2px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 0 1px rgb(255, 255, 255);
-    margin: 0 auto;
-}
-
-
-.navbtn {
-    display: -webkit-inline-flex;
-    text-align: -webkit-center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-  
 .title {
     background-color: transparent;
     font-size: 15px;
@@ -198,16 +161,6 @@ li {
     justify-content: center;
 }
 
-@keyframes navAnimation {
-    0%{
-        transform: translateY(250px);
-    }
-
-    100%{
-        transform: translateY(0px);
-    }
-}
-
 
 @keyframes open {
     0%{
@@ -219,16 +172,6 @@ li {
     }
 }
 
-@keyframes close {
-    0%{
-        transform: translate3d(0,0,0);
-        opacity: .5;
-    }
-
-    100%{
-        transform: translate3d(0,1000px,0);
-    }
-}
 
 @keyframes video {
     0%{
@@ -242,18 +185,7 @@ li {
 
 
 @media screen and (min-width: 1000px) {
-    #contact{
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    
     #profile{
-        /* position: sticky;
-        margin: auto; */
         position: absolute;
         bottom: 0;
         top: 0;
@@ -263,7 +195,7 @@ li {
     }
 
     @media screen and (max-height: 700px) {
-        #profile, #contact {
+        #profile{
             position: -webkit-sticky;
             position: sticky;
         }
@@ -278,7 +210,7 @@ li {
   }
   .mainArea {
     width: fit-content;
-    margin-bottom: 15%;
+    /* margin-bottom: 15%; */
     height: -webkit-fit-content;
     padding: 2%;
     position: -webkit-sticky;
@@ -316,7 +248,7 @@ li {
     }
 
     .mainArea {
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         position: -webkit-sticky;
         position: sticky;
     }
@@ -335,18 +267,6 @@ li {
         100%{
             transform: translate3d(0,0,0);
             opacity: 1;
-        }
-    }
-    
-    @keyframes close {
-        0%{
-            transform: translate3d(0,0,0);
-            opacity: 1;
-        }
-    
-        100%{
-            transform: translate3d(0,1000px,0);
-            opacity: 0;
         }
     }
 }
