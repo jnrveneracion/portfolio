@@ -1,3 +1,7 @@
+:root {
+
+}
+
 * {
     background-color: rgb(246, 246, 246);
     font-family: Arial, Helvetica, sans-serif;
@@ -31,16 +35,16 @@
 
 
 .top {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: -webkit-fill-available;
-      background-color: rgb(200, 200, 200);
-      padding: 5px;
-      border-radius: 10px 10px 0px 0px;
-      align-items: center;
-      display: inline-flex;
-      border-bottom: 1px solid  rgb(171, 171, 171);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: -webkit-fill-available;
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+    display: inline-flex;
+    border-bottom: 1px solid  rgb(171, 171, 171);
 }
   
   
@@ -206,7 +210,6 @@ li {
 
 
 
-
 @media screen and (min-width: 1000px) {
     #contact{
         position: absolute;
@@ -225,6 +228,7 @@ li {
     @media screen and (max-height: 700px) {
         #profile, #contact {
             position: -webkit-sticky;
+            position: sticky;
         }
     }
     
@@ -241,6 +245,7 @@ li {
     height: -webkit-fit-content;
     padding: 2%;
     position: -webkit-sticky;
+    position: sticky;
   }
 
   #head {
@@ -272,5 +277,6 @@ li {
     .mainArea {
         margin-bottom: 100px;
         position: -webkit-sticky;
+        position: sticky;
     }
 }
