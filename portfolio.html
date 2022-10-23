@@ -2,13 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="link" http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janrie Veneracion - Portfolio</title>
     <link rel="stylesheet" href="portfolioStyle.css">
 </head>
 <body>
+     <!-- Messenger Chat Plugin Code -->
+     <div id="fb-root"></div>
 
+     <!-- Your Chat Plugin code -->
+     <div id="fb-customer-chat" class="fb-customerchat">
+     </div>
+ 
+     <script>
+       var chatbox = document.getElementById('fb-customer-chat');
+       chatbox.setAttribute("page_id", "104810788829821");
+       chatbox.setAttribute("attribution", "biz_inbox");
+     </script>
+ 
+     <!-- Your SDK code -->
+     <script>
+       window.fbAsyncInit = function() {
+         FB.init({
+           xfbml            : true,
+           version          : 'v15.0'
+         });
+       };
+ 
+       (function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+     </script>
+
+     
     <div class="logo" >
       <video id="logo" src="video/logo.m4v" playsinline autoplay muted></video>
     </div>
@@ -31,19 +62,19 @@
             <div class="headfield">
                 <fieldset class="field">
                   <legend class="headLegend">Contact no.</legend>
-                  <a href="tel:+63">+639162876836</a>
+                  <a class="link" href="tel:+63">+639162876836</a>
                 </fieldset>
                 <fieldset class="field">
                   <legend class="headLegend">Email</legend>
-                  <a href="mailto:#">jnkdsandlk@gmail.com</a>
+                  <a class="link" href="mailto:#">jnkdsandlk@gmail.com</a>
                 </fieldset>
                 <fieldset class="field">
                   <legend class="headLegend">LinkedIn</legend>
-                  <a href="#">linkedin.com/in/dksadnkj/ </a>
+                  <a class="link" href="#">linkedin.com/in/dksadnkj/ </a>
                 </fieldset>
                 <fieldset class="field">
                   <legend class="headLegend">Website</legend>
-                  <a href="https://jnrveneracion.com">jnrveneracion.com</a>
+                  <a class="link" href="https://jnrveneracion.com">jnrveneracion.com</a>
                 </fieldset>
             </div>
         </div>
