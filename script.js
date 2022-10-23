@@ -34,7 +34,7 @@ function displayProfile(){
 
 function displayContact(){
     profile.style = "animation: close 1s ease; animation-fill-mode: forwards;";
-    contact.style = "display: sticky; animation: open 1s ease; animation-fill-mode: forwards;";
+    contact.style = "display: sticky; animation: open 10s ease; animation-fill-mode: forwards;";
     scrollUp();
 
     setTimeout(function() {
